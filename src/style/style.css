@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr; /*definir altura de cada coluna*/
+    grid-template-areas: 
+    "imagem imagem"
+    "ladinho meio"
+    "ladinho player"
+    "musica musica"
+    ;
+}
+
+.imagem{
+    grid-area: imagem;
+    background-color: aqua;
+}
+
+.ladinho{
+    grid-area: ladinho;
+    background-color: blue;
+}
+
+.meio{
+    grid-area: meio;
+    background-color: antiquewhite;
+
+}
+.player{
+    grid-area: player;
+    background-color: chartreuse;
+}
+.musica{
+    grid-area: musica;
+    background-color: chocolate;
+}
