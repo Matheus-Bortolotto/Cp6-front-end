@@ -9,35 +9,35 @@ body {
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 2fr 2fr 2fr 1fr; /*definir altura de cada coluna*/
+    grid-template-rows: 2fr 2fr 2fr 1fr; /*definir altura de cada linha*/
     grid-template-areas: 
-    "imagem imagem"
-    "ladinho meio"
-    "ladinho player"
-    "musica musica"
+    "nav nav"
+    "aside section"
+    "aside article"
+    "player player"
     ;
 }
 
-.imagem{
-    grid-area: imagem;
+.nav{
+    grid-area: nav;
     background-color: aqua;
 }
 
-.ladinho{
-    grid-area: ladinho;
+.aside{
+    grid-area: aside;
     background-color: blue;
 }
 
-.meio{
-    grid-area: meio;
+.section{
+    grid-area: section;
     background-color: antiquewhite;
 
 }
-.player{
-    grid-area: player;
+.article{
+    grid-area: article;
     background-color: chartreuse;
 }
-.musica{
-    grid-area: musica;
+.player{
+    grid-area: player;
     background-color: chocolate;
 }
