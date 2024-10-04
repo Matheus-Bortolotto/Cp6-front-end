@@ -1,31 +1,45 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
 }
 
+body, html {
+    height: 100%;
+}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 2fr 2fr 2fr 1fr;
-    /*definir altura de cada linha*/
     grid-template-areas:
-        "nav nav"
+        "top top"
         "aside section"
         "aside article"
-        "player player"
-    ;
-    height: 100%;
+        "player player";
 }
 
-.nav {
-    grid-area: nav;
+.top {
+    grid-area: top;
+    background-image: url('https://img.freepik.com/fotos-premium/arte-de-guaxinim-foda_915071-53506.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    z-index: 0;
     background-color: aqua;
 }
 
+.imagem {
+    text-align: center; /* Centraliza o texto dentro da div 'imagem' */
+}
 
+.text {
+    font-size: 3rem; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+}
 
 .header {
     display: flex;
@@ -34,16 +48,16 @@ body {
     gap: 2rem;
     font-size: smaller;
     align-items: center;
-}
+    width: auto;
+    padding-inline: 2rem;
+    height: 5rem;
+}   
 
 .logo {
     display: flex;
     background-color: rgb(255, 0, 0);
-    width: 200px;
+    width: 170px;
     height: 34px;
-    
-    /* align-items: start;
-    justify-content: start; */
 }
 
 .aside {
@@ -54,7 +68,6 @@ body {
 .section {
     grid-area: section;
     background-color: antiquewhite;
-
 }
 
 .article {
