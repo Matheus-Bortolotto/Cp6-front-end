@@ -6,38 +6,63 @@ body {
 }
 
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 2fr 2fr 2fr 1fr; /*definir altura de cada linha*/
-    grid-template-areas: 
-    "nav nav"
-    "aside section"
-    "aside article"
-    "player player"
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    /*definir altura de cada linha*/
+    grid-template-areas:
+        "nav nav"
+        "aside section"
+        "aside article"
+        "player player"
     ;
+    height: 100%;
 }
 
-.nav{
+.nav {
     grid-area: nav;
     background-color: aqua;
 }
 
-.aside{
+
+
+.header {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 2rem;
+    font-size: smaller;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 34px;
+    
+    /* align-items: start;
+    justify-content: start; */
+}
+
+.aside {
     grid-area: aside;
     background-color: blue;
 }
 
-.section{
+.section {
     grid-area: section;
     background-color: antiquewhite;
 
 }
-.article{
+
+.article {
     grid-area: article;
     background-color: chartreuse;
 }
-.player{
+
+.player {
     grid-area: player;
     background-color: chocolate;
 }
