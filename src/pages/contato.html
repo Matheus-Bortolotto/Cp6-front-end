@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/contato.css">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+
+  <ul class="header">
+    <li class="logo">Logo</li>
+    <li>Músicas do Momento</li>
+    <li>Playlists</li>
+    <li>Avaliações</li>
+    <li>Contato</li>
+  </ul>
+
+  <div class="container-ccc">
+    <h2 class="titulo-formulario">Formulário de Contato</h2>
+    <form>
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="fullName">Nome Completo</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="phone">Telefone</label>
+          <input type="tel" class="form-control" id="phone" placeholder="(XX) XXXX-XXXX">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="subject">Assunto</label>
+          <input type="text" class="form-control" id="subject" placeholder="Digite o assunto da mensagem" required>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      </div>
+
+
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="termsCheck" required>
+        <label class="form-check-label" for="termsCheck">Aceito os <a href="#">termos e condições</a></label>
+      </div>
+
+
+      <button type="submit" class="submit-btn-custom">Enviar Mensagem</button>
+    </form>
+  </div>
+
+ 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
