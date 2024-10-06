@@ -3,27 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>melodia</title>
+    <title>Melodia: Sua Musica, Sua Forma</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/carousel.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <ul class="header">
-        <li class="logo"></li>
-        <li>Musicas do momento</li>
-        <li>Playlists</li>
-        <li>Avaliações</li>
-        <li>Contato</li>
-    </ul>
+    <header>
+        <ul class="header">
+            <li class="logo"></li>
+            <li><a href="#musicas">Músicas do momento</a></li>
+            <li><a href="#playlists">Playlists</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
     
     <div class="container">
         <div class="top">
             <div class="imagem">
-                <h1 class="text">titulo fodaaa</h1>
+                <h1 class="text">Melodia: Sua Musica, Sua Forma</h1>
             </div>
         </div>
-        <div class="aside">2</div>
+        <div class="aside">
+            <aside class="sidebar">
+                <div class="logo-menu">
+                    <button class="menu-btn" id="menu-close">
+                        <i class='bx bx-log-out-circle'></i>
+                    </button>
+                   <i class="bi bi-clipboard-pulse"></i>
+                    <a href="#">Melodia: Sua Musica, Sua Forma</a>
+                </div>
+    
+                <div class="menu">
+                    <h5>Menu</h5>
+                    <ul>
+                        <li>
+                            <i class='bx bxs-bolt-circle'></i>
+                            <a href="#">Explore</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-volume-full'></i>
+                            <a href="#">Genres</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-album'></i>
+                            <a href="#">Albums</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-microphone'></i>
+                            <a href="#">Artists</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-radio'></i>
+                            <a href="#">Poddcasts</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="menu">
+                    <h5>Library</h5>
+                    <ul>
+                        <li>
+                            <i class='bx bx-undo'></i>
+                            <a href="#">Recent</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-photo-album'></i>
+                            <a href="#">Albums</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-heart'></i>
+                            <a href="#">Favourites</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-folder'></i>
+                            <a href="#">Local</a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="menu">
+                    <h5>Playlist</h5>
+                    <ul>
+                        <li>
+                            <i class='bx bxs-plus-square'></i>
+                            <a href="#">Create New</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-caret-right-circle'></i>
+                            <a href="#">Best of 2023</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-caret-right-circle'></i>
+                            <a href="#">Best of 2022</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-caret-right-circle'></i>
+                            <a href="#">Kael Fischer</a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="playing">
+                    <div class="bottom">
+                        <i class='bx bx-podcast'></i>
+                        <p>Playing On Device</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
         <div class="section">
             <div class="carrossel">
                 <div class="espaco" id="img">
@@ -36,8 +127,164 @@
                 </div>
             </div> 
         </div>
-        <div class="article">4</div>
-        <div class="player">5</div>
+        <div class="article" id="musicas">
+            <div class="playlist"></div>
+                <div class="music-list">
+                    <div class="header">
+                        <h5>Top Songs</h5>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <div class="info">
+                                <p>01</p>
+                                <img src="../img/electronic-music-album-cover-animated-design-template-d1cc77c6d34c507a1e643ef978db62b0_screen.jpg">
+                                <div class="details">
+                                    <h5>Sunrise</h5>
+                                    <p>Lila Rivera</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:45</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>02</p>
+                                <img src="../img/electronic-music-album-cover-template-design-12b51a1ad56ef5851bc8068dd8c79aaf_screen.jpg">
+                                <div class="details">
+                                    <h5>Voyage</h5>
+                                    <p>Tyde Brennnan</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:35</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>03</p>
+                                <img src="../img/infinitointerno-capa.webp">
+                                <div class="details">
+                                    <h5>Breeze</h5>
+                                    <p>Sola Kim</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>04:22</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>04</p>
+                                <img src="../img/music-album-cover-template-design-7bc9741b67ff4e39189cfa34cff04fe1_screen.jpg">
+                                <div class="details">
+                                    <h5>Twilight</h5>
+                                    <p>Jett Lawsonn</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>03:17</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                                <i class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="genres" id="playlists">
+                    <div class="header">
+                        <h5>Genres</h5>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <p>Electro<br>Pop</p>
+                        </div>
+                        <div class="item">
+                            <p>Dance<br>Beeat</p>
+                        </div>
+                        <div class="item">
+                            <p>Clubhouse<br>Remix</p>
+                        </div>
+                        <div class="item">
+                            <p>Hip Hop<br>Rap</p>
+                        </div>
+                        <div class="item">
+                            <p>Alternative<br>Indie</p>
+                        </div>
+                        <div class="item">
+                            <p>Classical<br>Period</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="player">
+            <div class="player-actions">
+                <div class="top-menu">
+                    <img src="../img/modelo-de-capa-de-album-gradiente_23-2150597431.avif">
+                </div>
+                <h4>Tocando Agora</h4>
+                <div class="buttons">
+                    <i class='bx bx-repeat'></i>
+                    <i class='bx bx-first-page'></i>
+                    <i class='bx bxs-right-arrow play-button'></i>
+                    <i class='bx bx-last-page'></i>
+                    <i class='bx bx-transfer-alt'></i>
+                </div>
+            </div>
+        </div>
     </div>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Sobre Nós</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae enim id augue congue volutpat.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#musicas">Músicas do momento</a></li>
+                    <li><a href="#playlists">Playlists</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Melodia: Sua Musica, Sua Forma
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
