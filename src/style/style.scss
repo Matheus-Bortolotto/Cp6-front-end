@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "top top"
+      "aside section"
+      "aside article"
+      "aside article"
+      "player player";
+  }
+  
+  .top {
+    grid-area: top;
+    background-image: url('https://img.freepik.com/fotos-premium/arte-de-guaxinim-foda_915071-53506.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    z-index: 0;
+    background-color: aqua;
+  }
+  
+  .imagem {
+    text-align: center; 
+  }
+  
+  .text {
+    font-size: 3rem; 
+    color: white; 
+    background-color: #030342;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #252a34;
+    padding: 10px 0;
+  }
+  
+  .header {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+  
+    a {
+      color: white; 
+      text-decoration: none; 
+  
+      &:hover {
+        color: #ff4b2b; 
+      }
+    }
+  }
+  
+  .logo {
+    background-color: #ff4b2b;
+    width: 150px;
+    height: 50px;
+  }
+  
+  .aside {
+    grid-area: aside;
+  }
+  
+  .section {
+    grid-area: section;
+    background-color: antiquewhite;
+  }
+  
+  .article {
+    grid-area: article;
+    background-color: #030342;
+  }
+  
+  .player {
+    grid-area: player;
+    background-color: chocolate;
+  }
+  
+  // Variáveis de cores
+  :root {
+    --primary-color: #ff416c;
+    --secondary-color: #282c34;
+    --text-color: #ffffff;
+    --inactive-color: #aaaaaa;
+    --hover-color: #3b3f47;
+    --border-radius: 10px;
+  }
+  
+  .aside .sidebar {
+    width: 500px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .logo-menu a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .menu {
+    margin-bottom: 30px;
+  
+    h5 {
+      font-size: 14px;
+      color: var(--inactive-color);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  
+    ul {
+      list-style: none;
+  
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+  
+        i {
+          font-size: 24px;
+          margin-right: 15px;
+          color: var(--inactive-color);
+        }
+  
+        a {
+          font-size: 16px;
+          color: var(--inactive-color);
+          text-decoration: none;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+  
+  .playing .top-menu {
+    display: flex;
+    align-items: center;
+  
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  
+    h4 {
+      font-size: 16px;
+      line-height: 1.2;
+      color: var(--text-color);
+    }
+  }
+  
+  .playing .bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  
+    i {
+      font-size: 24px;
+      margin-right: 10px;
+      color: var(--inactive-color);
+    }
+  
+    p {
+      font-size: 14px;
+      color: var(--inactive-color);
+    }
+  }
+  
+  .music-list {
+    flex: 3; 
+    padding-right: 2rem;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  
+      h5 {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+  
+      a {
+        font-size: 1rem;
+        color: #ff4b2b;
+        text-decoration: none;
+      }
+    }
+  
+    .items {
+      background-color: #252a34;
+      border-radius: 10px;
+      padding: 1rem;
+  
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #383e4e;
+  
+        &:last-child {
+          border-bottom: none;
+        }
+  
+        .info {
+          display: flex;
+          align-items: center;
+  
+          p {
+            margin-right: 1rem;
+            font-size: 1rem;
+          }
+  
+          img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+            border-radius: 5px;
+          }
+  
+          .details {
+            h5 {
+              font-size: 1.2rem;
+            }
+  
+            p {
+              font-size: 0.9rem;
+              color: #bbb;
+            }
+          }
+        }
+  
+        .actions {
+          display: flex;
+          align-items: center;
+  
+          p {
+            margin-right: 1rem;
+            font-size: 1rem;
+          }
+  
+          .icon {
+            margin-right: 1rem;
+  
+            i {
+              font-size: 1.5rem;
+              color: #ff4b2b;
+              cursor: pointer;
+            }
+          }
+  
+          i {
+            font-size: 1.5rem;
+            color: #ff4b2b; 
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilo das Playlists (Genres)
+  .genres {
+    flex: 2; 
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  
+      h5 {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+  
+      a {
+        font-size: 1rem;
+        color: #ff4b2b;
+        text-decoration: none;
+      }
+    }
+  
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  
+      .item {
+        background-color: #252a34;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.5;
+  
+        p {
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  .player {
+    grid-area: player;
+    background-color: #252a34;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-top: 2px solid #ff4b2b; 
+  
+    .player-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 600px; 
+        h4{
+            color: #fff;
+        }
+      .buttons {
+        display: flex;
+        gap: 15px;
+  
+        i {
+          font-size: 24px;
+          color: #ffffff; 
+          cursor: pointer;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #ff4b2b; 
+          }
+        }
+      }
+
+      .top-menu{
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+      }
+  
+      .lyrics {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+  
+        i {
+          font-size: 20px;
+          color: #ffffff;
+          cursor: pointer;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #ff4b2b; 
+          }
+        }
+  
+        h5 {
+          font-size: 1.2rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  
+  .footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid #ff4b2b;
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .footer-section {
+            flex: 1;
+            margin: 1rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #ff4b2b;
+            }
+
+            p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 0.5rem;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--text-color);
+                        font-size: 1rem;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: #ff4b2b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--hover-color);
+        color: var(--inactive-color);
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "top top"
+            "section section"
+            "article article"
+            "aside aside"
+            "player player";
+    }
+
+    .top {
+        height: 60vh; 
+    }
+
+    .aside {
+        grid-area: aside;
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        padding: 15px;
+    }
+
+    .section {
+        grid-area: section;
+        padding: 15px;
+    }
+
+    .article {
+        grid-area: article;
+        padding: 15px;
+    }
+
+    .player {
+        grid-area: player;
+        padding: 10px;
+    }
+
+    // Ajuste de tamanhos
+    .text {
+        font-size: 2rem; 
+    }
+
+    .header {
+        font-size: 1rem;
+        gap: 1.5rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 40px;
+    }
+
+    .menu-btn {
+        font-size: 20px;
+    }
+
+    .playing {
+        .top-menu img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        a {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "top"
+            "section"
+            "article"
+            "aside"
+            "player";
+    }
+
+    // Ajuste para a seção 'top'
+    .top {
+        height: 40vh; 
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    // Ajuste do texto na seção 'top'
+    .text {
+        font-size: 1.2rem; 
+        padding: 10px; 
+        text-align: center; 
+    }
+
+    // Ajuste da barra de navegação
+    .header {
+        font-size: 0.9rem; 
+        gap: 1rem; 
+        flex-wrap: wrap;
+    }
+
+    // Ajuste do logo
+    .logo {
+        width: 80px;
+        height: 30px; 
+    }
+
+    // Botão de menu
+    .menu-btn {
+        font-size: 18px; 
+    }
+
+    // Ajuste das seções: aside, section e article
+    .aside,
+    .section,
+    .article {
+        padding: 10px;
+        margin: 10px 0; 
+        background-color: var(--secondary-color); 
+        border-radius: 10px;
+    }
+
+    // Ajuste das imagens dentro da lista de música
+    .music-list {
+        .info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+    }
+
+    // Ajustes no player de música
+    .player-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .player {
+        .buttons {
+            gap: 10px;
+            i {
+                font-size: 22px; 
+            }
+        }
+
+        .lyrics {
+            h5 {
+                font-size: 1rem; 
+            }
+        }
+    }
+
+    // Ajuste das imagens no player
+    .playing {
+        .top-menu img {
+            width: 30px;
+            height: 30px; 
+            border-radius: 50%; 
+        }
+    }
+
+    .footer-section {
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
