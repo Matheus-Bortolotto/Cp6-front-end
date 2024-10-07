@@ -1,0 +1,101 @@
+body {
+  background-color: #030342;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body .avaliacao {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  body .avaliacao {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  body .avaliacao {
+    font-size: 1.5rem;
+  }
+}
+body .boxdecomentarios,
+body .boxdecomentarios2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  body .boxdecomentarios,
+  body .boxdecomentarios2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .boxdecomentarios .avaliacao-comentario,
+  body .boxdecomentarios2 .avaliacao-comentario {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+body .avaliacao-comentario {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  width: 30%;
+  min-width: 300px;
+}
+body .nome-usuario {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+@media (max-width: 480px) {
+  body .nome-usuario {
+    font-size: 1rem;
+  }
+}
+body .estrelas {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+body .estrelas input {
+  display: none;
+}
+body .estrelas label {
+  font-size: 25px;
+  color: #ff4b2b;
+}
+@media (max-width: 768px) {
+  body .estrelas label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  body .estrelas label {
+    font-size: 18px;
+  }
+}
+body .comentario {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+@media (max-width: 480px) {
+  body .comentario {
+    font-size: 0.9rem;
+  }
+}
+body .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=avaliacao.css.map */
