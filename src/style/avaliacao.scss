@@ -1,0 +1,100 @@
+body {
+    background-color: #030342;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    .avaliacao {
+        margin-top: 50px;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+
+            @media (max-width: 480px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .boxdecomentarios,
+    .boxdecomentarios2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .avaliacao-comentario {
+                width: 90%;
+                max-width: 600px;
+            }
+        }
+    }
+
+    .avaliacao-comentario {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        width: 30%;
+        min-width: 300px;
+    }
+
+    .nome-usuario {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #333;
+
+        @media (max-width: 480px) {
+            font-size: 1rem;
+        }
+    }
+
+    .estrelas {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+
+        input {
+            display: none;
+        }
+
+        label {
+            font-size: 25px;
+            color: #ff4b2b;
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .comentario {
+        font-size: 1rem;
+        color: #555;
+        margin-top: 10px;
+
+        @media (max-width: 480px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}

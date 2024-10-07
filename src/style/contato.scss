@@ -1,0 +1,47 @@
+// Variáveis
+$background-color: #32363f;
+$white: #fff;
+$title-color: #333;
+$submit-btn-color: #ff4b2b;
+$hover-btn-color: #ff4b2b;
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+// Estilos gerais
+body {
+  background-color: $background-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+// Container personalizado
+.container-ccc {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: $white;
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: 200px;
+
+  // Título do formulário
+  .titulo.formulario {
+    text-align: center;
+    margin-bottom: 30px;
+    color: $title-color;
+  }
+}
+
+// Botão de envio
+.submit-btn-custom {
+  background-color: $submit-btn-color;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $hover-btn-color;
+  }
+}
