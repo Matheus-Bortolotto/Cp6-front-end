@@ -12,3 +12,14 @@ Melodia é uma plataforma de streaming de música que oferece aos seus usuários
 - Carrossel Interativo de Imagens: A página inicial inclui um carrossel de imagens das mais recentes capas de álbuns e eventos, oferecendo uma navegação visualmente atraente para os usuários​(script).
 - Integração com Redes Sociais: A plataforma possibilita a integração com várias redes sociais, como Facebook, Instagram, e Twitter, permitindo que os usuários compartilhem suas playlists e músicas favoritas diretamente em seus perfis​(index).
 - Melodia é projetada para todos os amantes da música que buscam uma plataforma moderna, funcional e com um forte senso de comunidade.
+
+## Integrantes:
+RM:554952 - André flores
+
+RM: 558537 - Luan Ramos
+
+RM: 555189 - Matheus Bortolotto
+
+RM: 556930 - Matheus Ricciotti
+
+RM:556892 - Guilherme Lunghini
