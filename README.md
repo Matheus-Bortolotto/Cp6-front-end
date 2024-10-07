@@ -3,7 +3,7 @@
 ## Descrição da Aplicação - Melodia: Sua Música, Sua Forma
 Melodia é uma plataforma de streaming de música que oferece aos seus usuários uma experiência musical personalizada, conectando-os às mais recentes tendências, playlists exclusivas e artistas emergentes. Com uma interface amigável e design intuitivo, a plataforma busca tornar a descoberta musical acessível e prazerosa.
 
-##Funcionalidades Principais:
+## Funcionalidades Principais:
 
 - Exploração de Músicas: A seção "Músicas do momento" oferece uma curadoria das canções mais populares, facilitando a busca por novos sucessos ou clássicos atemporais.
 - Playlists Personalizadas: Usuários podem explorar e criar playlists de acordo com seus gostos musicais ou optar por sugestões automáticas baseadas em seu histórico de escuta.
